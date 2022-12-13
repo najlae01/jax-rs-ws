@@ -1,0 +1,9 @@
+fstt\org\services\HistoCarbRepository.class
+fstt\org\entities\HistoCarb.class
+fstt\org\services\CarburantRepository.class
+fstt\org\entities\Station.class
+fstt\org\controllers\StationController.class
+fstt\org\services\StationRepository.class
+fstt\org\entities\Carburant.class
+fstt\org\services\HelloServices.class
+fstt\org\services\HelloWorldApplication.class

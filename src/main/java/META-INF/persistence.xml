@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+<persistence-unit name="unit" transaction-type="RESOURCE_LOCAL">
+
+ 	  <class>fstt.org.entities.Station</class>
+ 	  <class>fstt.org.entities.Carburant</class>
+ 	  <class>fstt.org.entities.HistoCarb</class>
+ 	     
+      <properties>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/geststation"/>
+         <property name="javax.persistence.jdbc.user" value="root"/>
+         <property name="javax.persistence.jdbc.password" value=""/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+      </properties>
+      
+      
+       
+   </persistence-unit>
+</persistence>
