@@ -3,18 +3,27 @@ package fstt.org.controllers;
 
 import fstt.org.entities.Station;
 import fstt.org.services.StationRepository;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.ResponseBuilder;
+import jakarta.ws.rs.core.Response.Status;
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import com.sun.jersey.api.view.Viewable;
 
@@ -32,10 +41,18 @@ public class StationController{
 	
 	@Path("/save")
 	@GET
+	//@Produces(MediaType.TEXT_HTML)
 	public Viewable save(
-			@Context HttpServletRequest request,
-		    @Context HttpServletResponse response) throws Exception{
-		return new Viewable("addStation.jsp", request);
+	        @Context HttpServletRequest request,
+	        @Context HttpServletResponse response) throws Exception{
+		/*try {
+			request.getRequestDispatcher("addStation.jsp").forward(request, response);
+		}catch(ServletException | IOException ex) {
+	        return Response.status(Status.NOT_FOUND).build();
+	    }
+		return null;*/
+		return new Viewable("addStation.jsp");
+		//return Response.temporaryRedirect(URI.create("/addStation.jsp")).build();
 	}
 
 	@Path("/saved/{request}")

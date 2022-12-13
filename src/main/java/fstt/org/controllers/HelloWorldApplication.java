@@ -1,4 +1,4 @@
-package fstt.org.services;
+package fstt.org.controllers;
 
 import org.glassfish.jersey.server.ResourceConfig;
 

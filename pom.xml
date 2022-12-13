@@ -60,14 +60,14 @@
 			<artifactId>jersey-hk2</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/project -->
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson -->
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>project</artifactId>
+			<artifactId>jersey-media-json-jackson</artifactId>
 			<version>3.0.2</version>
-			<type>pom</type>
 		</dependency>
-		
+
+
 		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
@@ -80,7 +80,20 @@
 			<version>1.8</version>
 		</dependency>
 		<!-- Thanks for using https://jar-download.com -->
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-jetty-servlet -->
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-jetty-servlet</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>5.0.0</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 	<build>

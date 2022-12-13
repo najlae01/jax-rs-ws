@@ -1,4 +1,4 @@
-package fstt.org.services;
+package fstt.org.controllers;
 
 import jakarta.ws.rs.GET;
 

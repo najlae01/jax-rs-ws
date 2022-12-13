@@ -10,7 +10,7 @@
         <!-- Define the ResourceConfig class -->
         <init-param>
             <param-name>jakarta.ws.rs.Application</param-name>
-            <param-value>fstt.org.services.HelloWorldApplication</param-value>
+            <param-value>fstt.org.controllers.HelloWorldApplication</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
